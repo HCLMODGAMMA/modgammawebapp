@@ -12,10 +12,13 @@ const onSubmit = values => {
     console.log(values);
     login(values)
     .then((result)=>{
-        console.log(result)
-        window.location.href='/submitCase';
+        console.log(result);
+        if(result.status == 200){
+            console.log("Login successfuly");
+            window.location.href='/submitCase';
+        }
     });
-    window.location.href='/submitCase';
+    // window.location.href='/submitCase';
 }
 
 const validate = values =>{
