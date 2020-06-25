@@ -6,23 +6,6 @@ export class Header extends Component {
     render() {
         return (
             <div>
-                {/* <nav className="navbar navbar-expand-md bg-primary navbar-dark">
-                    <Link to="/" className="acolor navbar-brand">FCMAS</Link>
-                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse" id="collapsibleNavbar">
-                        <ul className="navbar-nav pull-right">
-                        <li className="nav-item">
-                                <Link to="/facilityRegister" className="acolor nav-link"> MP and Facility Registeration </Link>
-                        </li>
-                        <li className="nav-item">
-                                <Link to="/auctionDetail" className="acolor nav-link">Auction Detail</Link>
-                        </li>
-                        </ul>
-                    </div>  
-                </nav> */}
-
                 <nav className="navbar navbar-expand-sm bg-primary navbar-dark">
                     <Link to="/" className="acolor navbar-brand">HCL Tech</Link>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
@@ -37,7 +20,7 @@ export class Header extends Component {
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/auctionDetail" className="acolor nav-link">View Cases</Link>
+                            <Link to="/viewAllCases" className="acolor nav-link">View All Cases</Link>
                         </li>
                         {/* <li className="nav-item dropdown">
                             <a className="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"

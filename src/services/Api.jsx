@@ -27,6 +27,19 @@ export function submitCase(userData){
     });
 }
 
+export function listAllCases(){
+    const serviceURL = Config('listCases');
+    return new Promise((resolve, reject)=>{
+        axios.get(serviceURL)
+        .then(responseJson=>{
+            resolve(responseJson);
+        })
+        .catch(error=>{
+            reject(error);
+        })
+    });
+}
+
 export function ListofCases(facilityId){
     const serviceURL = Config('listCases');
     // console.log(serviceURL + facilityId);
