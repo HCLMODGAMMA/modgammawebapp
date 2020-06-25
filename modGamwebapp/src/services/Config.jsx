@@ -1,7 +1,8 @@
-const LOGIN = "http://localhost:9090/login";
-const LIST_ALL_CASE = "http://localhost:9090/listCases";
-const VIEW_CASE_DETAILS = "http://localhost:9090/viewCaseDetail?csmNo=";
-const SAVE_SUBMIT_CASE = "http://localhost:9090/submitCase";
+
+const LOGIN = "http://gammamoderntechhclmicroservice.azurewebsites.net/login";
+const LIST_ALL_CASE = "http://gammamoderntechhclmicroservice.azurewebsites.net/listCases";
+const VIEW_CASE_DETAILS = "http://gammamoderntechhclmicroservice.azurewebsites.net/viewCaseDetail?csmNo=";
+const SAVE_SUBMIT_CASE = "http://gammamoderntechhclmicroservice.azurewebsites.net/submitCase";
 
 
 
