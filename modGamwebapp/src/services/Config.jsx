@@ -1,8 +1,8 @@
 
-const LOGIN = "http://gammamoderntechhclmicroservice.azurewebsites.net/login";
-const LIST_ALL_CASE = "http://gammamoderntechhclmicroservice.azurewebsites.net/listCases";
-const VIEW_CASE_DETAILS = "http://gammamoderntechhclmicroservice.azurewebsites.net/viewCaseDetail?csmNo=";
-const SAVE_SUBMIT_CASE = "http://gammamoderntechhclmicroservice.azurewebsites.net/submitCase";
+const LOGIN = "https://gammamoderntechhclmicroservice.azurewebsites.net/login";
+const LIST_ALL_CASE = "https://gammamoderntechhclmicroservice.azurewebsites.net/listCases";
+const VIEW_CASE_DETAILS = "https://gammamoderntechhclmicroservice.azurewebsites.net/viewCaseDetail?csmNo=";
+const SAVE_SUBMIT_CASE = "https://gammamoderntechhclmicroservice.azurewebsites.net/submitCase";
 
 
 
