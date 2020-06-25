@@ -84,10 +84,34 @@ export class SubmitCase extends Component {
         .then((result)=>{
             console.log(result)
             if(result.status == 200){
+                this.clearAll();
                 alert("Case submitted successfully");
             }
         });
         
+    }
+
+    clearAll = event =>{ 
+        this.setState({
+            csmNo: "",
+            caseSubmissionNo: "",
+            caseType: "",
+            caseSubType: "",
+            submittedDate: "",
+            caseStatus: "",
+            subject: "",
+            proposalDescription: "",
+            reason : "",
+            sites: [],
+            siteNo: "1",
+            siteName:"",
+            siteDescription: "",
+            location: "",
+            contactsubmittedBy: "",
+            contactemailAddress: "",
+            contactsubmittedDate: "",
+            contactagencyCompany:""
+        })
     }
 
     /*handleChange(i, event) {
@@ -126,6 +150,9 @@ export class SubmitCase extends Component {
     render() {
         const formFields = {...this.state};
         console.log(formFields);
+        const mystyle = {
+            marginLeft: 10
+          };
         return (
             <div>
                 <Header></Header>
@@ -211,7 +238,10 @@ export class SubmitCase extends Component {
                             </div>
 
                             <div className="col-sm-12 padTop10">
-                                <button id="signin" type="button" className="btn btn-primary" onClick={this.submitCase}>Submit</button>
+                                <button id="submitCase" type="button" className="btn btn-primary" onClick={this.submitCase}>Submit Case</button>
+
+                                <button style={mystyle} id="clear" type="button" className="btn btn-primary" onClick={this.clearAll}>Reset</button>
+
                                 {/* <Button className="marleft10" variant="contained" color="primary" onClick={this.clearAll}>
                                     Clear
                                 </Button> */}
