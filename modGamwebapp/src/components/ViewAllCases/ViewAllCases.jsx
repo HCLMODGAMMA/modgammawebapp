@@ -35,7 +35,7 @@ export class ViewAllCases extends Component {
         listAllCases()
         .then((response)=>{
             console.log(response)
-            if(response.status == 200){
+            if(response.data.status == 200){
                 this.setState({
                     allCases :response.data.result
                 })
@@ -43,6 +43,9 @@ export class ViewAllCases extends Component {
         });
     }
     
+    viewCase = (e)=> {
+        console.log(e);
+    }
     render() {
 
         const mystyle = {
@@ -72,7 +75,7 @@ export class ViewAllCases extends Component {
                                     <TableBody>  
                                         {this.state.allCases.map((p, index) => {  
                                             return <TableRow key={index}>  
-                                            <TableCell>{p.csmNo}</TableCell>
+                                            <TableCell> <span onClick={() => this.viewCase(p.csmNo)}>{p.csmNo}</span></TableCell>
                                             <TableCell>{p.caseSubmissionNo}</TableCell>  
                                             <TableCell>{p.caseType}</TableCell>  
                                             <TableCell>{p.caseSubType}</TableCell>  

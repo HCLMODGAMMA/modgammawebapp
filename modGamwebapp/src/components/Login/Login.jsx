@@ -11,11 +11,13 @@ const initialValues = {
 const onSubmit = values => {
     console.log(values);
     login(values)
-    .then((result)=>{
-        console.log(result);
-        if(result.status == 200){
+    .then((response)=>{
+        console.log(response);
+        if(response.data.status == "Success"){
             console.log("Login successfuly");
             window.location.href='/submitCase';
+        }else if(response.data.status == "Fail"){
+            console.log("Login Failed");
         }
     });
    
