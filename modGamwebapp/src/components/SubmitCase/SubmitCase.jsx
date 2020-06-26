@@ -58,25 +58,26 @@ export class SubmitCase extends Component {
             caseSubmissionNo: "1234",
             caseType: this.state.caseType,
             caseSubType: this.state.caseSubType,
-            submittedDate: "2020-06-25",
-            caseStatus: this.state.caseStatus,
+            submittedDate: new Date(),
+            caseStatus: "Submitted",
             subject: this.state.subject,
             proposalDescription: this.state.proposalDescription,
             reason : "",
-            contactDetails : {
-                submittedBy: this.state.contactsubmittedBy,
-                emailAddress: this.state.contactemailAddress,
-                submittedDate: "2020-06-25",
-                agencyCompany: this.state.contactagencyCompany
-            },
-            sites : [
-                {
-                    siteNo: "1",
-                    siteName : this.state.siteName,
-                    siteDescription: this.state.siteDescription,
-                    location: this.state.location
-                }
-            ]
+            // contactDetails : {
+            //     submittedBy: this.state.contactsubmittedBy,
+            //     emailAddress: this.state.contactemailAddress,
+            //     submittedDate: "2020-06-25",
+            //     agencyCompany: this.state.contactagencyCompany
+            // }
+            // ,
+            // sites : [
+            //     {
+            //         siteNo: "1",
+            //         siteName : this.state.siteName,
+            //         siteDescription: this.state.siteDescription,
+            //         location: this.state.location
+            //     }
+            // ]
 
         };
         submitCase(submitCaseInput)
