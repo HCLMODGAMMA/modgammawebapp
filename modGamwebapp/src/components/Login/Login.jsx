@@ -18,7 +18,7 @@ const onSubmit = values => {
             window.location.href='/submitCase';
         }
     });
-    // window.location.href='/submitCase';
+   
 }
 
 const validate = values =>{
