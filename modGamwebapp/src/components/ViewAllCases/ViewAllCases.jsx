@@ -35,9 +35,9 @@ export class ViewAllCases extends Component {
         listAllCases()
         .then((response)=>{
             console.log(response)
-            if(response.data.status == 200){
+            if(response.status == 200){
                 this.setState({
-                    allCases :response.data.result
+                    allCases :response.data
                 })
             }
         });

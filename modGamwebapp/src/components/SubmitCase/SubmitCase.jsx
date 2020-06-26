@@ -9,8 +9,8 @@ export class SubmitCase extends Component {
         super(props)
     
         this.state = {
-            csmNo: "1234",
-            caseSubmissionNo: "1234",
+            csmNo: "",
+            caseSubmissionNo: "",
             caseType: "",
             caseSubType: "",
             submittedDate: "",
@@ -54,12 +54,12 @@ export class SubmitCase extends Component {
     submitCase = event =>{ 
         console.log(this.state);
         const submitCaseInput = {
-            csmNo: "1234",
-            caseSubmissionNo: "1234",
+            csmNo: "",
+            caseSubmissionNo: "",
             caseType: this.state.caseType,
             caseSubType: this.state.caseSubType,
             submittedDate: new Date(),
-            caseStatus: "Submitted",
+            caseStatus: "SUBMITTED",
             subject: this.state.subject,
             proposalDescription: this.state.proposalDescription,
             reason : "",
@@ -169,7 +169,11 @@ export class SubmitCase extends Component {
                     <div class="col-sm-8">
                         <select class="form-control" id="caseType" name="caseType" value={formFields.caseType} onChange={this.changeEventReact}>
                             <option value="">--Select--</option>
-                            <option value="FA">Formal Application</option>
+                            <option value="BA">BA Application</option>
+                            <option value="SA">SA Application</option>
+                            <option value="MA">MA Application</option>
+                            <option value="DA">DA Application</option>
+                            <option value="RA">RA Application</option>
                             <option value="others">Others</option>
                         </select>
                     </div>
@@ -181,8 +185,18 @@ export class SubmitCase extends Component {
                     <div class="col-sm-8">
                         <select class="form-control" id="caseSubType" name="caseSubType" value={formFields.caseSubType} onChange={this.changeEventReact}>
                             <option value="">--Select--</option>
-                            <option value="FA">FA</option>
+                            <option value="BA-12">BA-12 Application</option>
+                            <option value="BA-14">BA-14 Application</option>
+                            <option value="SA-23">SA-23 Application</option>
+                            <option value="SA-12">SA-12 Application</option>
+                            <option value="MA-32">MA-32 Application</option>
+                            <option value="MA-12">MA-12 Application</option>
+                            <option value="DA-34">DA-34 Application</option>
+                            <option value="DA-12">DA-12 Application</option>
+                            <option value="RA-32">RA-32 Application</option>
+                            <option value="RA-12">RA-12 Application</option>
                             <option value="others">Others</option>
+                            
                         </select>
                     </div>
                     </div>
