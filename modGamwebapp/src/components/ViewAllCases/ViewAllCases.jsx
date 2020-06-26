@@ -45,6 +45,7 @@ export class ViewAllCases extends Component {
     
     viewCase = (e)=> {
         console.log(e);
+        window.location.href = "/ViewCase?csmNo=" + e;
     }
     render() {
 
@@ -75,7 +76,7 @@ export class ViewAllCases extends Component {
                                     <TableBody>  
                                         {this.state.allCases.map((p, index) => {  
                                             return <TableRow key={index}>  
-                                            <TableCell> <span onClick={() => this.viewCase(p.csmNo)}>{p.csmNo}</span></TableCell>
+                                            <TableCell> <a href="#" onClick={() => this.viewCase(p.csmNo)}>{p.csmNo}</a></TableCell>
                                             <TableCell>{p.caseSubmissionNo}</TableCell>  
                                             <TableCell>{p.caseType}</TableCell>  
                                             <TableCell>{p.caseSubType}</TableCell>  

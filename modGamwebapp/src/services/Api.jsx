@@ -40,11 +40,11 @@ export function listAllCases(){
     });
 }
 
-export function ListofCases(facilityId){
-    const serviceURL = Config('listCases');
-    // console.log(serviceURL + facilityId);
+export function viewCase(csmNo){
+    const serviceURL = Config('viewCaseDetail');
+    console.log(serviceURL + csmNo);
     return new Promise((resolve, reject)=>{
-        axios.get(serviceURL)
+        axios.get(serviceURL + csmNo)
         .then(responseJson=>{
             resolve(responseJson);
         })

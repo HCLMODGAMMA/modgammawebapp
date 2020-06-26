@@ -4,6 +4,7 @@ import Login from './components/Login/Login';
 import NotFound from './components/NotFound/NotFound';
 import SubmitCase from './components/SubmitCase/SubmitCase';
 import ViewAllCases from "./components/ViewAllCases/ViewAllCases";
+import ViewCase from "./components/ViewCases/ViewCase";
 
 
 function Routes() {
@@ -20,6 +21,10 @@ function Routes() {
     {
         path: '/viewAllCases',
         component: ViewAllCases
+    },
+    {
+        path: '/ViewCase',
+        component: ViewCase
     }
   ];
   return (
@@ -29,6 +34,7 @@ function Routes() {
                     <Route exact path="/login" component={Login}></Route>
                     <Route path="/submitCase" component={SubmitCase}></Route>
                     <Route path="/viewAllCases" component={ViewAllCases}></Route>
+                    <Route path="/ViewCase" component={ViewCase}></Route>
                     <Route path="*" component={NotFound}></Route>
             </Switch>
             
