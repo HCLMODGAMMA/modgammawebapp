@@ -94,7 +94,7 @@ export class ViewCase extends Component {
                     <div class="row form-group">
                     <label class="control-label col-sm-4">Case Type</label>
                     <div class="col-sm-8">
-                        <select class="form-control" id="caseType" name="caseType" value={formFields.caseType} onChange={this.changeEventReact}>
+                        <select disabled="true" class="form-control" id="caseType" name="caseType" value={formFields.caseType} onChange={this.changeEventReact}>
                             <option value="">--Select--</option>
                             <option value="BA">BA Application</option>
                             <option value="SA">SA Application</option>
@@ -110,7 +110,7 @@ export class ViewCase extends Component {
                     <div class="row form-group">
                     <label class="control-label col-sm-4">Case SubType</label>
                     <div class="col-sm-8">
-                        <select class="form-control" id="caseSubType" name="caseSubType" value={formFields.caseSubType} onChange={this.changeEventReact}>
+                        <select disabled="true"  class="form-control" id="caseSubType" name="caseSubType" value={formFields.caseSubType} onChange={this.changeEventReact}>
                         <option value="">--Select--</option>
                             <option value="BA-12">BA-12 Application</option>
                             <option value="BA-14">BA-14 Application</option>
@@ -132,14 +132,14 @@ export class ViewCase extends Component {
                     <div class="row form-group">
                     <label class="control-label col-sm-4">Submitted By</label>
                     <div class="col-sm-8">
-                        <input type="text" className="form-control" placeholder="Submitted by" name="contactsubmittedBy" value={formFields.contactsubmittedBy} onChange={this.changeEventReact} />
+                        <input disabled="true" type="text" className="form-control" placeholder="Submitted by" name="contactsubmittedBy" value={formFields.contactsubmittedBy} onChange={this.changeEventReact} />
                     </div>
                     </div>
 
                     <div class="row form-group">
                         <label class="control-label col-sm-4">Agency / Company</label>
                         <div class="col-sm-8">
-                            <input type="text" className="form-control" placeholder="Agency / Company" name="contactagencyCompany"  value={formFields.contactagencyCompany} onChange={this.changeEventReact} />
+                            <input disabled="true" type="text" className="form-control" placeholder="Agency / Company" name="contactagencyCompany"  value={formFields.contactagencyCompany} onChange={this.changeEventReact} />
                         </div>
                     </div>
                 </div>
@@ -148,7 +148,7 @@ export class ViewCase extends Component {
                     <div class="row form-group">
                     <label class="control-label col-sm-4">Subject</label>
                     <div class="col-sm-8">
-                    <textarea cols="4" rows="4" className="form-control" placeholder="Subject" name="subject" value={formFields.subject} onChange={this.changeEventReact}>
+                    <textarea cols="4" rows="4" disabled="true" className="form-control" placeholder="Subject" name="subject" value={formFields.subject} onChange={this.changeEventReact}>
                         </textarea>
                     </div>
                     </div>
@@ -158,7 +158,7 @@ export class ViewCase extends Component {
                     <div class="row form-group">
                     <label class="control-label col-sm-4">Proposal Description</label>
                     <div class="col-sm-8">
-                    <textarea cols="4" rows="4" className="form-control" placeholder="Proposal Description" name="proposalDescription" value={formFields.proposalDescription} onChange={this.changeEventReact}>
+                    <textarea cols="4" rows="4" disabled="true" className="form-control" placeholder="Proposal Description" name="proposalDescription" value={formFields.proposalDescription} onChange={this.changeEventReact}>
                         </textarea>
                     </div>
                     </div>
@@ -168,26 +168,26 @@ export class ViewCase extends Component {
                     <div className="col-sm-4 col-xs-12">
                         <div className="form-group">
                             <label >Site Name:</label>
-                            <input type="text" className="form-control col-sm-10 col-xs-12" placeholder="Site Name" name="siteName" value={formFields.siteName} onChange={this.changeEventReact} />
+                            <input type="text" disabled="true"  className="form-control col-sm-10 col-xs-12" placeholder="Site Name" name="siteName" value={formFields.siteName} onChange={this.changeEventReact} />
                         </div>                                       
                     </div>
                     <div className="col-sm-4 col-xs-12">
                         <div className="form-group">
                             <label>Site Description:</label>
-                            <input type="text" className="form-control col-sm-10 col-xs-12" placeholder="Site Description" name="siteDescription" value={formFields.siteDescription} onChange={this.changeEventReact} />
+                            <input type="text" disabled="true" className="form-control col-sm-10 col-xs-12" placeholder="Site Description" name="siteDescription" value={formFields.siteDescription} onChange={this.changeEventReact} />
                         </div>
                     </div>
                     <div className="col-sm-4 col-xs-12">
                         <div className="form-group">
                             <label>Location:</label>
-                            <input type="text" className="form-control col-sm-10 col-xs-12" placeholder="Location" name="location" value={formFields.location} onChange={this.changeEventReact} />
+                            <input type="text" disabled="true" className="form-control col-sm-10 col-xs-12" placeholder="Location" name="location" value={formFields.location} onChange={this.changeEventReact} />
                         </div>
                     </div> 
                 </div>
             </div>
             </div>
                 <div class="text-center">
-                    <button id="submitCase" type="button" className="btn btn-primary" onClick={() => this.backToListOfCases()}>Back</button>
+                    <button id="submitCase"  type="button" className="btn btn-primary" onClick={() => this.backToListOfCases()}>Back</button>
                 </div>
                 </form>
             </div>
