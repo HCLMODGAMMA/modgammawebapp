@@ -48,7 +48,7 @@ function Login() {
     const formik = useFormik({
         initialValues,
         onSubmit,
-        // validate  This is just for dummy checck in to test CICD
+        // validate.This is dummy check in to test CICD
         validationSchema
     })
 
