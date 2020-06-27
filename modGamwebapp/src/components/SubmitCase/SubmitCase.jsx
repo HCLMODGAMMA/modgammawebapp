@@ -157,17 +157,17 @@ export class SubmitCase extends Component {
             <div>
                 <Header></Header>
 
-                <h2 class="text-center">Case Submission Form</h2>
-                <form class="form-horizontal">
+                <h2 className="text-center">Case Submission Form</h2>
+                <form className="form-horizontal">
                 <div className="container-fluid">
                     
                     <div className="row">
 
-                <div class="col-sm-6">
-                    <div class="row form-group">
-                    <label class="control-label col-sm-4">Case Type</label>
-                    <div class="col-sm-8">
-                        <select class="form-control" id="caseType" name="caseType" value={formFields.caseType} onChange={this.changeEventReact}>
+                <div className="col-sm-6">
+                    <div className="row form-group">
+                    <label className="control-label col-sm-4">Case Type</label>
+                    <div className="col-sm-8">
+                        <select className="form-control" id="caseType" name="caseType" value={formFields.caseType} onChange={this.changeEventReact}>
                             <option value="">--Select--</option>
                             <option value="BA">BA Application</option>
                             <option value="SA">SA Application</option>
@@ -180,10 +180,10 @@ export class SubmitCase extends Component {
                     </div>
 
 
-                    <div class="row form-group">
-                    <label class="control-label col-sm-4">Case SubType</label>
-                    <div class="col-sm-8">
-                        <select class="form-control" id="caseSubType" name="caseSubType" value={formFields.caseSubType} onChange={this.changeEventReact}>
+                    <div className="row form-group">
+                    <label className="control-label col-sm-4">Case SubType</label>
+                    <div className="col-sm-8">
+                        <select className="form-control" id="caseSubType" name="caseSubType" value={formFields.caseSubType} onChange={this.changeEventReact}>
                             <option value="">--Select--</option>
                             <option value="BA-12">BA-12 Application</option>
                             <option value="BA-14">BA-14 Application</option>
@@ -202,36 +202,36 @@ export class SubmitCase extends Component {
                     </div>
                 </div>
 
-                <div class="col-sm-6">
-                    <div class="row form-group">
-                    <label class="control-label col-sm-4">Submitted By</label>
-                    <div class="col-sm-8">
+                <div className="col-sm-6">
+                    <div className="row form-group">
+                    <label className="control-label col-sm-4">Submitted By</label>
+                    <div className="col-sm-8">
                         <input type="text" className="form-control" placeholder="Submitted by" name="contactsubmittedBy" value={formFields.contactsubmittedBy} onChange={this.changeEventReact} />
                     </div>
                     </div>
 
-                    <div class="row form-group">
-                        <label class="control-label col-sm-4">Agency / Company</label>
-                        <div class="col-sm-8">
+                    <div className="row form-group">
+                        <label className="control-label col-sm-4">Agency / Company</label>
+                        <div className="col-sm-8">
                             <input type="text" className="form-control" placeholder="Agency / Company" name="contactagencyCompany"  value={formFields.contactagencyCompany} onChange={this.changeEventReact} />
                         </div>
                     </div>
                 </div>
 
-                <div class="col-sm-6">
-                    <div class="row form-group">
-                    <label class="control-label col-sm-4">Subject</label>
-                    <div class="col-sm-8">
+                <div className="col-sm-6">
+                    <div className="row form-group">
+                    <label className="control-label col-sm-4">Subject</label>
+                    <div className="col-sm-8">
                     <textarea cols="4" rows="4" className="form-control" placeholder="Subject" name="subject" value={formFields.subject} onChange={this.changeEventReact}>
                         </textarea>
                     </div>
                     </div>
                 </div>
 
-                <div class="col-sm-6">
-                    <div class="row form-group">
-                    <label class="control-label col-sm-4">Proposal Description</label>
-                    <div class="col-sm-8">
+                <div className="col-sm-6">
+                    <div className="row form-group">
+                    <label className="control-label col-sm-4">Proposal Description</label>
+                    <div className="col-sm-8">
                     <textarea cols="4" rows="4" className="form-control" placeholder="Proposal Description" name="proposalDescription" value={formFields.proposalDescription} onChange={this.changeEventReact}>
                         </textarea>
                     </div>
