@@ -1,3 +1,6 @@
-.acolor{
+/* .acolor{
     color: white !important;
+} */
+.activeColor{
+    background-color: rgba(243, 243, 243, 0.4) !important;
 }

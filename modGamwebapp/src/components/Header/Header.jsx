@@ -3,6 +3,22 @@ import { Link, Route, Switch } from 'react-router-dom'
 import '../Header/Header.css'
 
 export class Header extends Component {
+
+    constructor(props) {
+        super(props)
+        this.state = {
+            activeMenu : ""
+        }
+    }
+
+    componentDidMount(){
+        let getParms = window.location.pathname;
+        console.log(getParms);
+            this.setState({
+                activeMenu : getParms
+            })
+    }
+    
     render() {
         return (
             <div>
@@ -14,12 +30,13 @@ export class Header extends Component {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent-333">
                         <ul className="navbar-nav mr-auto">
-                        <li className="nav-item active">
+                        <li className={"nav-item" +" " + (this.state.activeMenu =='/submitCase'? 'activeColor':'')}>
                         <Link to="/submitCase" className="acolor nav-link">Submit Case
                             <span className="sr-only">(current)</span>
-                            </Link>
+                            </Link> 
                         </li>
-                        <li className="nav-item">
+                        <li className={"nav-item" +" " + (this.state.activeMenu =='/viewAllCases'? 'activeColor':'')}>
+                        {/* <div className={"btn-group pull-right " + (this.props.showBulkActions ? 'show' : 'hidden')}> */}
                             <Link to="/viewAllCases" className="acolor nav-link">View All Cases</Link>
                         </li>
                         {/* <li className="nav-item dropdown">
