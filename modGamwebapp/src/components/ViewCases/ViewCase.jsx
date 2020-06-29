@@ -67,7 +67,7 @@ export class ViewCase extends Component {
                     siteName : "Jurong East",
                     siteDescription : "Site 2 added",
                     location :"Singapore",
-                    contactagencyCompany: "URA",
+                    contactagencyCompany: "HCL",
                     contactsubmittedBy: "Admin"                  
                 })
             }

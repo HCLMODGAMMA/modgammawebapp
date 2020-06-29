@@ -64,12 +64,12 @@ export class ViewAllCases extends Component {
                                 <Table stickyHeader  aria-label="sticky table">  
                                     <TableHead>  
                                         <TableRow>  
-                                        <TableCell>CSM No</TableCell>  
-                                        <TableCell>Case Submission No</TableCell>
-                                        <TableCell>Case Type</TableCell>  
-                                        <TableCell>Case Subtype</TableCell>  
+                                        <TableCell>Record No</TableCell>  
+                                        <TableCell>Record Submission No</TableCell>
+                                        <TableCell>Record Type</TableCell>  
+                                        <TableCell>Record Subtype</TableCell>  
                                         <TableCell>Submitted Date</TableCell>
-                                        <TableCell>Case Status</TableCell>  
+                                        <TableCell>Record Status</TableCell>  
                                         <TableCell>Proposal Description</TableCell>  
                                         </TableRow>  
                                     </TableHead>  
