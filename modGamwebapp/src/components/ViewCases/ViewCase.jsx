@@ -84,17 +84,17 @@ export class ViewCase extends Component {
         return (
             <div>
                 <Header></Header>
-                <h2 class="text-center">View Case Details</h2>
-                <form class="form-horizontal">
+                <h2 className="text-center">View Record Details</h2>
+                <form className="form-horizontal">
                 <div className="container-fluid">
                     
                     <div className="row">
 
-                <div class="col-sm-6">
-                    <div class="row form-group">
-                    <label class="control-label col-sm-4">Case Type</label>
-                    <div class="col-sm-8">
-                        <select disabled="true" class="form-control" id="caseType" name="caseType" value={formFields.caseType} onChange={this.changeEventReact}>
+                <div className="col-sm-6">
+                    <div className="row form-group">
+                    <label className="control-label col-sm-4">Record Type</label>
+                    <div className="col-sm-8">
+                        <select disabled="true" className="form-control" id="caseType" name="caseType" value={formFields.caseType} onChange={this.changeEventReact}>
                             <option value="">--Select--</option>
                             <option value="BA">BA Application</option>
                             <option value="SA">SA Application</option>
@@ -107,10 +107,10 @@ export class ViewCase extends Component {
                     </div>
 
 
-                    <div class="row form-group">
-                    <label class="control-label col-sm-4">Case SubType</label>
-                    <div class="col-sm-8">
-                        <select disabled="true"  class="form-control" id="caseSubType" name="caseSubType" value={formFields.caseSubType} onChange={this.changeEventReact}>
+                    <div className="row form-group">
+                    <label className="control-label col-sm-4">Record SubType</label>
+                    <div className="col-sm-8">
+                        <select disabled="true"  className="form-control" id="caseSubType" name="caseSubType" value={formFields.caseSubType} onChange={this.changeEventReact}>
                         <option value="">--Select--</option>
                             <option value="BA-12">BA-12 Application</option>
                             <option value="BA-14">BA-14 Application</option>
@@ -128,36 +128,36 @@ export class ViewCase extends Component {
                     </div>
                 </div>
 
-                <div class="col-sm-6">
-                    <div class="row form-group">
-                    <label class="control-label col-sm-4">Submitted By</label>
-                    <div class="col-sm-8">
+                <div className="col-sm-6">
+                    <div className="row form-group">
+                    <label className="control-label col-sm-4">Submitted By</label>
+                    <div className="col-sm-8">
                         <input disabled="true" type="text" className="form-control" placeholder="Submitted by" name="contactsubmittedBy" value={formFields.contactsubmittedBy} onChange={this.changeEventReact} />
                     </div>
                     </div>
 
-                    <div class="row form-group">
-                        <label class="control-label col-sm-4">Agency / Company</label>
-                        <div class="col-sm-8">
+                    <div className="row form-group">
+                        <label className="control-label col-sm-4">Agency / Company</label>
+                        <div className="col-sm-8">
                             <input disabled="true" type="text" className="form-control" placeholder="Agency / Company" name="contactagencyCompany"  value={formFields.contactagencyCompany} onChange={this.changeEventReact} />
                         </div>
                     </div>
                 </div>
 
-                <div class="col-sm-6">
-                    <div class="row form-group">
-                    <label class="control-label col-sm-4">Subject</label>
-                    <div class="col-sm-8">
+                <div className="col-sm-6">
+                    <div className="row form-group">
+                    <label className="control-label col-sm-4">Subject</label>
+                    <div className="col-sm-8">
                     <textarea cols="4" rows="4" disabled="true" className="form-control" placeholder="Subject" name="subject" value={formFields.subject} onChange={this.changeEventReact}>
                         </textarea>
                     </div>
                     </div>
                 </div>
 
-                <div class="col-sm-6">
-                    <div class="row form-group">
-                    <label class="control-label col-sm-4">Proposal Description</label>
-                    <div class="col-sm-8">
+                <div className="col-sm-6">
+                    <div className="row form-group">
+                    <label className="control-label col-sm-4">Proposal Description</label>
+                    <div className="col-sm-8">
                     <textarea cols="4" rows="4" disabled="true" className="form-control" placeholder="Proposal Description" name="proposalDescription" value={formFields.proposalDescription} onChange={this.changeEventReact}>
                         </textarea>
                     </div>
@@ -167,26 +167,26 @@ export class ViewCase extends Component {
                 <div className="row col-sm-12">
                     <div className="col-sm-4 col-xs-12">
                         <div className="form-group">
-                            <label >Site Name:</label>
-                            <input type="text" disabled="true"  className="form-control col-sm-10 col-xs-12" placeholder="Site Name" name="siteName" value={formFields.siteName} onChange={this.changeEventReact} />
+                            <label >Record Name:</label>
+                            <input type="text" disabled="true"  className="form-control col-sm-10 col-xs-12" placeholder="Record Name" name="siteName" value={formFields.siteName} onChange={this.changeEventReact} />
                         </div>                                       
                     </div>
                     <div className="col-sm-4 col-xs-12">
                         <div className="form-group">
-                            <label>Site Description:</label>
-                            <input type="text" disabled="true" className="form-control col-sm-10 col-xs-12" placeholder="Site Description" name="siteDescription" value={formFields.siteDescription} onChange={this.changeEventReact} />
+                            <label>Record Description:</label>
+                            <input type="text" disabled="true" className="form-control col-sm-10 col-xs-12" placeholder="Record Description" name="siteDescription" value={formFields.siteDescription} onChange={this.changeEventReact} />
                         </div>
                     </div>
                     <div className="col-sm-4 col-xs-12">
                         <div className="form-group">
-                            <label>Location:</label>
-                            <input type="text" disabled="true" className="form-control col-sm-10 col-xs-12" placeholder="Location" name="location" value={formFields.location} onChange={this.changeEventReact} />
+                            <label>Record Location:</label>
+                            <input type="text" disabled="true" className="form-control col-sm-10 col-xs-12" placeholder="Record Location" name="location" value={formFields.location} onChange={this.changeEventReact} />
                         </div>
                     </div> 
                 </div>
             </div>
             </div>
-                <div class="text-center">
+                <div className="text-center">
                     <button id="submitCase"  type="button" className="btn btn-primary" onClick={() => this.backToListOfCases()}>Back</button>
                 </div>
                 </form>

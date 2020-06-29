@@ -31,13 +31,13 @@ export class Header extends Component {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent-333">
                         <ul className="navbar-nav mr-auto">
                         <li className={"nav-item" +" " + (this.state.activeMenu =='/submitCase'? 'activeColor':'')}>
-                        <Link to="/submitCase" className="acolor nav-link">Submit Case
+                        <Link to="/submitCase" className="acolor nav-link">Submit Record
                             <span className="sr-only">(current)</span>
                             </Link> 
                         </li>
                         <li className={"nav-item" +" " + (this.state.activeMenu =='/viewAllCases'? 'activeColor':'')}>
                         {/* <div className={"btn-group pull-right " + (this.props.showBulkActions ? 'show' : 'hidden')}> */}
-                            <Link to="/viewAllCases" className="acolor nav-link">View All Cases</Link>
+                            <Link to="/viewAllCases" className="acolor nav-link">View All Records</Link>
                         </li>
                         {/* <li className="nav-item dropdown">
                             <a className="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
